@@ -1,5 +1,5 @@
-# GitHub-Eclipse
 
+# GitHub-Eclipse
 step-by-step instructions for pushing and pulling changes to/from a GitHub repository using the Eclipse IDE:
 
 ## Pushing Changes to GitHub:
@@ -49,5 +49,26 @@ step-by-step instructions for pushing and pulling changes to/from a GitHub repos
    - Enter a commit message describing the merge.
    - Click the `Commit` button.
 
-It's important to regularly commit your changes and pull the latest updates from the remote repository to keep your local copy up to date.
-If conflicts arise during merging, carefully resolve them to ensure a smooth collaboration process.
+# Github-Gitbash/Git/Command Line
+## Pushing Changes to GitHub:
+
+1. Goto location where our code present
+   cd projects/my-project
+2.Initialize git repository
+   git init
+3. Add Code to git stagin area
+    git add *
+4. Commit our code to repository
+    git commit -m "Initial commit"
+5. Push the code to git repository
+   git push -u origin master
+
+
+## Pulling Changes from GitHub:
+1. Create an empty folder where you want to pull the git code
+2. Initilize git repository
+   git init
+3. Add the remote git address
+   git remote add origin master git_project_url
+4. Pull the Code from github to your local repository
+   git pull origin master
